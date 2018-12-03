@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onButtonClickEvent()
     {
+        //this is not happening
         b1=(Button)findViewById(R.id.button);
         t1=(EditText) findViewById(R.id.editText);
         t2=(EditText)findViewById((R.id.editText2));
