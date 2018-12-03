@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                     Toast.makeText(MainActivity.this,t1.getText().toString()+" is a faccha",Toast.LENGTH_LONG).show();
-
+                Toast.makeText(MainActivity.this,"Version is not showing up on github",Toast.LENGTH_LONG).show();
             }
         });
 
