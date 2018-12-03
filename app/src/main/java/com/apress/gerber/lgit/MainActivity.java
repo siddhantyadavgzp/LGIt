@@ -9,8 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private Button b1;
-    private EditText t1,t2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,10 +36,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
     }
-
 
 
 
