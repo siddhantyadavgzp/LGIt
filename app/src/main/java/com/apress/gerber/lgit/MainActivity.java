@@ -14,6 +14,27 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        onButtonClickEvent();
+    }
+    public void onButtonClickEvent()
+    {
+        //this is not happening
+        b1=(Button)findViewById(R.id.button);
+        t1=(EditText) findViewById(R.id.editText);
+        t2=(EditText)findViewById((R.id.editText2));
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Integer.parseInt(t2.getText().toString())>1)
+                {
+                    Toast.makeText(MainActivity.this,t1.getText().toString()+" is Not a faccha",Toast.LENGTH_LONG).show();
+                }
+                else
+                    Toast.makeText(MainActivity.this,t1.getText().toString()+" is a faccha",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,"Version is not showing up on github",Toast.LENGTH_LONG).show();
+            }
+        });
+
 
     }
 
